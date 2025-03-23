@@ -2,7 +2,9 @@
 
 This is a Friendica add-on that adds a stylesheet to the HEAD element to support showing Postbox styling.
 
-It does not add any interface for creating Postboxes, but users can still create them with BBcode:
+It does not add any interface for creating Postboxes, but users can still create them with BBcode.
+
+_**NOTE:** Support for Postbox is built into Bookface 1.6+. This adddon adds support to Friendica regardless of what theme/scheme is being used._
 
 ## Getting started
 
