@@ -4,8 +4,6 @@ This is a Friendica add-on that adds a stylesheet to the HEAD element to support
 
 It does not add any interface for creating Postboxes, but users can still create them with BBcode:
 
-```[class=postbox-red]Wrapped text goes here[/class]
-
 ## Getting started
 
 1. Place the "postbox" folder in your _friendica/addons_ subfolder.
@@ -15,8 +13,42 @@ It does not add any interface for creating Postboxes, but users can still create
 ## Using Zen Postbox
 
 1. Open the message Compose modal or Page
-2. Type [class=postbox-red]Wrapped text goes here[/class] (substitute "-red" with any of the available styles)
+2. Type `[class=postbox-red]Wrapped text goes here[/class]` (substitute "-red" with any of the available styles)
 3. Press the "Preview" tab to see what it will look like.
+
+### Available Postbox styles
+
+**Solid Color Backgrounds:**
+
+- .postbox-black
+- .postbox-red
+- .postbox-green
+- .postbox-blue
+- .postbox-orange
+- .postbox-purple
+- .postbox-forest
+- .postbox-ocean
+- .postbox-pink
+- .postbox-salmon
+
+
+**Gradient Backgrounds:**
+
+- .postbox-darkgray
+- .postbox-minty
+- .postbox-mintgray
+- .postbox-redblue
+- .postbox-violets
+- .postbox-grayblack
+- .postbox-tealblue
+- .postbox-greengray
+- .postbox-tealgray
+- .postbox-bluegray
+- .postbox-lavendergray
+- .postbox-sunset
+- .postbox-sherbert
+
+
 
 ## Known Issues
 
@@ -31,7 +63,7 @@ It does not add any interface for creating Postboxes, but users can still create
 Random Penguin <https://gitlab.com/randompenguin>
 
 ## License
-Assuming AGPL for add-ons since that's the license Friendica is under
+AGPL
 
 ## Project status
 Unsupported by Friendica devs.
