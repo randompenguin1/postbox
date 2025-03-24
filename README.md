@@ -58,7 +58,7 @@ _**NOTE:** Support for Postbox is built into Bookface 1.6+. This adddon adds sup
 - Postboxes are not shown in third-party apps (at least none do yet)
 
 ## Changelog
-1.0 (23 March 2025)
+1.0 (24 March 2025)
 * Initial Release for Friendica 'Interrupted Fern' 2024.12
 
 ## Authors and acknowledgment
