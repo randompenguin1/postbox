@@ -16,6 +16,6 @@ function postbox_install()
 function postbox_head(string &$b)
 {	
 	// Add Postbox Styling to Header
-	$box_styles = __DIR__ . '/postbox.css';
+	$box_styles = __DIR__ . '/postbox.min.css';
 	DI::page()->registerStylesheet($box_styles);
 }
