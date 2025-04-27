@@ -2,7 +2,7 @@
 /**
  * Name: Postbox
  * Description: Adds support for showing Postbox backgrounds but does NOT add an interface for making them (but users can still make them with BBcode)
- * Version: 1.0
+ * Version: 1.1
  * Author: Random Penguin <https://gitlab.com/randompenguin>
  */
 
@@ -14,8 +14,17 @@ function postbox_install()
 	Hook::register('head', __FILE__, 'postbox_head');
 }
 function postbox_head(string &$b)
-{	
-	// Add Postbox Styling to Header
-	$box_styles = __DIR__ . '/postbox.min.css';
-	DI::page()->registerStylesheet($box_styles);
+{
+	/* Check if zen_postbox is active first, only do this if it is not */
+	if (!function_exists('zen_postbox_install')){	
+		/* Add Postbox Styling to Header
+		   DI::page()->registerStylesheet($path) might load before theme
+		   so we will append to $b to make it load much much later
+		*/
+		$path = __DIR__ . '/view/postbox.min.css?v=' . DI::app()::VERSION;	
+		if (mb_strpos($path, DI::basePath() . DIRECTORY_SEPARATOR) === 0) {
+			$path = mb_substr($path, mb_strlen(DI::basePath() . DIRECTORY_SEPARATOR));
+		}
+		$b .= '<link rel="stylesheet" href="'.$path.'" media="screen"/>';
+	}
 }
