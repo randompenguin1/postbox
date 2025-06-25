@@ -2,7 +2,7 @@
 /**
  * Name: Postbox
  * Description: Adds support for showing Postbox backgrounds but does NOT add an interface for making them (but users can still make them with BBcode)
- * Version: 1.1
+ * Version: 1.2
  * Author: Random Penguin <https://gitlab.com/randompenguin>
  */
 
@@ -21,7 +21,7 @@ function postbox_head(string &$b)
 		   DI::page()->registerStylesheet($path) might load before theme
 		   so we will append to $b to make it load much much later
 		*/
-		$path = __DIR__ . '/view/postbox.min.css?v=' . DI::app()::VERSION;	
+		$path = __DIR__ . '/view/postbox.min.css?v=1.2';	
 		if (mb_strpos($path, DI::basePath() . DIRECTORY_SEPARATOR) === 0) {
 			$path = mb_substr($path, mb_strlen(DI::basePath() . DIRECTORY_SEPARATOR));
 		}
