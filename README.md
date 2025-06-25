@@ -164,6 +164,9 @@ These are ONLY available on servers with the _Postbox_ or _Zen Postbox_ add-on i
 - Currently Postbox BBcode is not parsed correctly by either Diaspora or Hubzilla
 
 ## Changelog
+1.2 (24 June 2025)
+* Changed stylesheet URL so it no longer appends Friendica version but addon version. This also makes the addon compatible with the 2025 dev version of Friendica.
+
 1.1 (28 April 2025)
 * Changed names of solid colors to match HTML named colors
 * Added 24 new solid colors.
